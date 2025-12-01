@@ -286,7 +286,7 @@ st.title("Insurance talk")
 # =============================================================
 @st.cache_data(show_spinner=False)
 def load_data():
-    df = pd.read_csv("../1_adatok/survivor_base3.csv", sep=";", low_memory=False)
+    df = pd.read_csv("survivor_base3.csv", sep=";", low_memory=False)
     if "Szerzodeskotes_datuma" in df.columns:
         df["Szerzodeskotes_datuma"] = pd.to_datetime(df["Szerzodeskotes_datuma"], errors="coerce")
     if "Kockazatviselés_vege" in df.columns:
