@@ -1,0 +1,7 @@
+streamlit
+pandas
+numpy
+matplotlib
+openai
+python-dateutil
+audio-recorder-streamlit
